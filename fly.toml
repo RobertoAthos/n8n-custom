@@ -8,10 +8,6 @@ primary_region = 'gru'
 
 [build]
 
-[env]
-  N8N_PORT = "8080"
-  WEBHOOK_TUNNEL_URL = "https://n8n-custom.fly.dev"
-
 [http_service]
   internal_port = 5678
   force_https = true
