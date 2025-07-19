@@ -8,8 +8,12 @@ primary_region = 'gru'
 
 [build]
 
+[env]
+  N8N_PORT = "8080"
+  WEBHOOK_TUNNEL_URL = "https://n8n-custom.fly.dev"
+
 [http_service]
-  internal_port = 8080
+  internal_port = 5678
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true
@@ -17,7 +21,7 @@ primary_region = 'gru'
   processes = ['app']
 
 [[vm]]
-  memory = '1gb'
+  memory = '4gb'
   cpu_kind = 'shared'
   cpus = 1
   memory_mb = 1024
