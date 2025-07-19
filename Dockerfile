@@ -14,9 +14,7 @@ RUN mkdir -p /data && chown node:node /data
 
 WORKDIR /data
 
-ENV N8N_PORT=8080
 ENV N8N_ENV=production
-ENV WEBHOOK_TUNNEL_URL=https://n8n-custom.fly.dev
 
 USER node
 
