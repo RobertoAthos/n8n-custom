@@ -14,6 +14,8 @@ RUN mkdir -p /data && chown node:node /data
 
 WORKDIR /data
 
+ENV N8N_ENV=production
+
 USER node
 
 CMD ["n8n"]

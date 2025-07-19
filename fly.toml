@@ -8,6 +8,10 @@ primary_region = 'gru'
 
 [build]
 
+[env]
+  N8N_ENV = "production"
+  NODE_ENV = "production"
+
 [http_service]
   internal_port = 5678
   force_https = true
