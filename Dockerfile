@@ -18,4 +18,4 @@ ENV N8N_ENV=production
 
 USER node
 
-CMD ["n8n"]
+ENTRYPOINT ["sh", "-c", "echo Running with N8N_ENV=$N8N_ENV && exec n8n"]
